@@ -93,7 +93,7 @@ def main(
     name2db = {n: i for i, p in enumerate(db_descriptors) for n in list_h5_names(p)}
     db_names_h5 = list(name2db.keys())
     query_names_h5 = list_h5_names(descriptors)
-
+    
     if db_model:
         images = read_images_binary(db_model / "images.bin")
         db_names = [i.name for i in images.values()]
